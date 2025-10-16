@@ -60,7 +60,7 @@ export const HomePage: React.FC = () => {
     }
   };
 
-  return <div className="w-full min-h-screen bg-base-100 dark:bg-base-100 text-base-content">
+  return <div className="w-full min-h-screen bg-base-100 text-base-content">
 
     {/* Hero Section - ULTRA SOMBRE */}
     <section className="relative bg-base-100 text-base-content overflow-hidden">
@@ -212,10 +212,10 @@ export const HomePage: React.FC = () => {
     </section>
 
     {/* Features Section */}
-    <section className="py-12 sm:py-16 bg-base-200 dark:bg-base-200/50">
+    <section className="py-12 sm:py-16 bg-base-200">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          <motion.div className="bg-base-100 dark:bg-base-100/80 rounded-xl shadow-lg p-6 border-t-4 border-warning" initial={{
+          <motion.div className="bg-base-100 rounded-xl shadow-lg p-6 border-t-4 border-warning" initial={{
             opacity: 0,
             y: 30
           }} whileInView={{
@@ -240,7 +240,7 @@ export const HomePage: React.FC = () => {
               logistique international couvrant plus de 200 pays.
             </p>
           </motion.div>
-          <motion.div className="bg-base-100 dark:bg-base-100/80 rounded-xl shadow-lg p-6 border-t-4 border-primary" initial={{
+          <motion.div className="bg-base-100 rounded-xl shadow-lg p-6 border-t-4 border-primary" initial={{
             opacity: 0,
             y: 30
           }} whileInView={{
@@ -266,7 +266,7 @@ export const HomePage: React.FC = () => {
               comparaison instantanée entre transporteurs.
             </p>
           </motion.div>
-          <motion.div className="bg-base-100 dark:bg-base-100/80 rounded-xl shadow-lg p-6 border-t-4 border-success" initial={{
+          <motion.div className="bg-base-100 rounded-xl shadow-lg p-6 border-t-4 border-success" initial={{
             opacity: 0,
             y: 30
           }} whileInView={{
@@ -296,8 +296,8 @@ export const HomePage: React.FC = () => {
       </div>
     </section>
 
-    {/* Services Section - FILTRES BLEUS FONCÉS */}
-    <section className="py-16 sm:py-20 bg-base-100 dark:bg-base-100/90" ref={servicesRef}>
+    {/* Services Section */}
+    <section className="py-16 sm:py-20 bg-base-100" ref={servicesRef}>
       <div className="container mx-auto px-4">
         <motion.div className="text-center mb-12 sm:mb-16" initial={{
           opacity: 0,
@@ -463,7 +463,7 @@ export const HomePage: React.FC = () => {
     </section>
 
     {/* How It Works */}
-    <section className="py-16 sm:py-20 bg-base-200 dark:bg-base-200/50 relative overflow-hidden" ref={howItWorksRef}>
+    <section className="py-16 sm:py-20 bg-base-200 relative overflow-hidden" ref={howItWorksRef}>
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-warning/5 rounded-bl-full"></div>
         <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-primary/5 rounded-tr-full"></div>
@@ -496,7 +496,7 @@ export const HomePage: React.FC = () => {
         <div className="relative">
           <div className="hidden xl:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-warning/20 via-primary/20 to-warning/20 z-0 transform -translate-y-1/2"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <motion.div className="bg-base-100 dark:bg-base-100/80 rounded-xl shadow-lg p-6 sm:p-8 text-center relative z-10" initial={{
+            <motion.div className="bg-base-100 rounded-xl shadow-lg p-6 sm:p-8 text-center relative z-10" initial={{
               opacity: 0,
               y: 50
             }} whileInView={{
@@ -528,7 +528,7 @@ export const HomePage: React.FC = () => {
                 instantané basé sur votre envoi.
               </p>
             </motion.div>
-            <motion.div className="bg-base-100 dark:bg-base-100/80 rounded-xl shadow-lg p-6 sm:p-8 text-center relative z-10" initial={{
+            <motion.div className="bg-base-100 rounded-xl shadow-lg p-6 sm:p-8 text-center relative z-10" initial={{
               opacity: 0,
               y: 50
             }} whileInView={{
@@ -560,7 +560,7 @@ export const HomePage: React.FC = () => {
                 nécessaires à l'expédition.
               </p>
             </motion.div>
-            <motion.div className="bg-base-100 dark:bg-base-100/80 rounded-xl shadow-lg p-6 sm:p-8 text-center relative z-10" initial={{
+            <motion.div className="bg-base-100 rounded-xl shadow-lg p-6 sm:p-8 text-center relative z-10" initial={{
               opacity: 0,
               y: 50
             }} whileInView={{
@@ -653,7 +653,7 @@ export const HomePage: React.FC = () => {
     </section>
 
     {/* Testimonials */}
-    <section className="py-16 sm:py-20 bg-base-100 dark:bg-base-100/90" ref={testimonialsRef}>
+    <section className="py-16 sm:py-20 bg-base-100" ref={testimonialsRef}>
       <div className="container mx-auto px-4">
         <motion.div className="text-center mb-12 sm:mb-16" initial={{
           opacity: 0,
@@ -682,14 +682,14 @@ export const HomePage: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             <div className="flex justify-between absolute top-1/2 left-0 right-0 transform -translate-y-1/2 z-20 px-4">
-              <motion.button onClick={prevTestimonial} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-base-100 dark:bg-base-100/80 shadow-lg flex items-center justify-center text-base-content/70 hover:text-warning focus:outline-none" whileHover={{
+              <motion.button onClick={prevTestimonial} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-base-100 shadow-lg flex items-center justify-center text-base-content/70 hover:text-warning focus:outline-none" whileHover={{
                 scale: 1.1
               }} whileTap={{
                 scale: 0.9
               }}>
                 <ChevronLeftIcon size={20} />
               </motion.button>
-              <motion.button onClick={nextTestimonial} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-base-100 dark:bg-base-100/80 shadow-lg flex items-center justify-center text-base-content/70 hover:text-warning focus:outline-none" whileHover={{
+              <motion.button onClick={nextTestimonial} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-base-100 shadow-lg flex items-center justify-center text-base-content/70 hover:text-warning focus:outline-none" whileHover={{
                 scale: 1.1
               }} whileTap={{
                 scale: 0.9
@@ -853,7 +853,7 @@ export const HomePage: React.FC = () => {
     </section>
 
     {/* Trust Indicators */}
-    <section className="py-12 sm:py-16 bg-base-200 dark:bg-base-200/50">
+    <section className="py-12 sm:py-16 bg-base-200">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           <motion.div className="text-center" initial={{
@@ -951,7 +951,7 @@ export const HomePage: React.FC = () => {
     </section>
 
     {/* Partners Logos */}
-    <section className="py-12 sm:py-16 bg-base-100 dark:bg-base-100/90 border-t border-base-200 dark:border-base-200/50">
+    <section className="py-12 sm:py-16 bg-base-100 border-t border-base-200">
       <div className="container mx-auto px-4">
         <motion.div className="text-center mb-8 sm:mb-12" initial={{
           opacity: 0,
