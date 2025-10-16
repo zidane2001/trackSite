@@ -1,6 +1,6 @@
 // API client for backend communication
 const API_BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://your-deployed-backend-url.com' // Replace with your actual deployed backend URL
+  ? 'https://track-site.vercel.app/api' // Vercel will provide the actual URL
   : 'http://localhost:3003';
 export const BACKEND_PORT = 3003;
 export interface Location {
