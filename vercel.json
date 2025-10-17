@@ -2,8 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/server.js",
-      "use": "@vercel/node"
+      "src": "backend/index.php",
+      "use": "@vercel/php"
     },
     {
       "src": "package.json",
@@ -16,7 +16,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/backend/server.js"
+      "dest": "/backend/index.php"
     },
     {
       "src": "/admin/(.*)",
