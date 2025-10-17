@@ -1,10 +1,9 @@
 // api/track.js - SUPABASE + TRACKING LIVE
 import { createClient } from '@supabase/supabase-js';
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-);
+const supabaseUrl = 'https://qoxunfehjvlnjfcdhirm.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY || 'SUPABASE_CLIENT_API_KEY'
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default async function handler(req, res) {
   const { code } = req.query;
