@@ -1,13 +1,11 @@
 {
   "version": 2,
+  "functions": {
+    "backend/index.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
   "builds": [
-    {
-      "src": "backend/index.php",
-      "use": "@vercel/php",
-      "config": {
-        "runtime": "php8.1"
-      }
-    },
     {
       "src": "package.json",
       "use": "@vercel/static-build",
